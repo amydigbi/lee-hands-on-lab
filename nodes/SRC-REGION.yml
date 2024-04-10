@@ -1,0 +1,63 @@
+steps:
+  REGION-34673c99-b9b3-44e1-afa3-e5f950523725:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c49e8dfd-bb31-447e-b16d-64776e7943a0
+              stepCounter: 34673c99-b9b3-44e1-afa3-e5f950523725
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ba2631b9-87d8-4183-a2c2-e57faff721e8
+              stepCounter: 34673c99-b9b3-44e1-afa3-e5f950523725
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d80376a7-4d1e-4d91-a55d-cd346699974d
+              stepCounter: 34673c99-b9b3-44e1-afa3-e5f950523725
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 34673c99-b9b3-44e1-afa3-e5f950523725
